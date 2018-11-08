@@ -1,16 +1,15 @@
-# Welcome!
-
-This C template lets you get started quickly with a simple one-page playground.
-
-```C runnable
 #include <stdio.h>
+int main()
+{
+    int n, i;
 
-int main() {
-	printf("Hello World!");
+    printf("Enter an integer: ");
+    scanf("%d",&n);
+
+    for(i=1; i<=10; ++i)
+    {
+        printf("%d * %d = %d \n", n, i, n*i);
+    }
+    
+    return 0;
 }
-
-```
-
-# Advanced usage
-
-If you want a more complex example (external libraries, viewers...), see the [official documentation](https://tech.io/playgrounds/408/tech-io-documentation).
